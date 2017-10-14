@@ -38,6 +38,20 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-55",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 654.0, 213.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 662.0, 202.5, 133.0, 20.0 ],
+					"style" : "",
+					"text" : "Leonardo Foletto, 2017"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-52",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -1160,6 +1174,27 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"angle" : 273.732292,
+					"bordercolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"grad1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"grad2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"id" : "obj-58",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 684.0, 184.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ -0.5, -2.0, 850.0, 312.0 ],
+					"proportion" : 0.39,
+					"pt1" : [ 0.40099, 0.904348 ],
+					"pt2" : [ 0.455446, 1.73913 ],
+					"style" : ""
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -1787,7 +1822,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "GRANELLO!.maxpat",
-				"bootpath" : "~/Desktop/MAX/Leonardo Foletto - patches/GRANULEO",
+				"bootpath" : "~/Documents/GitHub/Granular-Works/GRANULARME!",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1795,21 +1830,21 @@
 , 			{
 				"name" : "vs.rand3~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Virtual Sound Macros/externals/ugen macros",
-				"patcherrelativepath" : "../../../../Documents/Max 7/Packages/Virtual Sound Macros/externals/ugen macros",
+				"patcherrelativepath" : "../../../Max 7/Packages/Virtual Sound Macros/externals/ugen macros",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vs.bp.rand3~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Virtual Sound Macros/externals/ugen macros",
-				"patcherrelativepath" : "../../../../Documents/Max 7/Packages/Virtual Sound Macros/externals/ugen macros",
+				"patcherrelativepath" : "../../../Max 7/Packages/Virtual Sound Macros/externals/ugen macros",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vs.random.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Virtual Sound Macros/externals/random generators",
-				"patcherrelativepath" : "../../../../Documents/Max 7/Packages/Virtual Sound Macros/externals/random generators",
+				"patcherrelativepath" : "../../../Max 7/Packages/Virtual Sound Macros/externals/random generators",
 				"type" : "JSON",
 				"implicit" : 1
 			}
