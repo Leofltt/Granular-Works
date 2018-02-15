@@ -58,8 +58,8 @@ kGrainRate chnget "grainRate"
 ; grain clock
  async  = 0.0
 ; grain shape
-kGrainDur chnget "grainDur" 
-kduration = (kGrainDur*1000)/kGrainRate;not sure this is the best way to do it
+kduration chnget "grainDur" 
+
 ; different pitch for each source waveform
  kwavfreq chnget "tranScaling"
  kfildur1 = tableng(giLiveFeed) / sr
