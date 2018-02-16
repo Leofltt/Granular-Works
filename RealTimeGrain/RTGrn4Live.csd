@@ -59,6 +59,9 @@ kGrainRate chnget "grainRate"
  async  = 0.0
 ; grain shape
 kduration chnget "grainDur" 
+; pitch masking tables
+;iwavfreqstarttab ftgentmp 0, 0, 16, -2, 0, 2, 1,1,2
+;iwavfreqendtab ftgentmp 0, 0, 16, -2, 0, 2, 1,1,2
 
 ; different pitch for each source waveform
  kwavfreq chnget "tranScaling"
