@@ -38,7 +38,6 @@ endop
  giLiveFeedLenSec = giLiveFeedLen/sr
  giLiveFeed ftgen 0, 0, giLiveFeedLen+1, 2, 0
 
-
 instr 1
 kFeed chnget "grainFb"
  a1 inch 1
@@ -58,10 +57,8 @@ kGrainRate chnget "grainRate"
 ; grain clock
  async  = 0.0
 ; grain shape
-kduration chnget "grainDur" 
-; pitch masking tables
-;iwavfreqstarttab ftgentmp 0, 0, 16, -2, 0, 2, 1,1,2
-;iwavfreqendtab ftgentmp 0, 0, 16, -2, 0, 2, 1,1,2
+kduration chnget "grainDur"
+
 
 ; different pitch for each source waveform
  kwavfreq chnget "tranScaling"
@@ -96,14 +93,14 @@ $RecordBound(3)
 $RecordBound(4)
  ; activate all 4 source waveforms
  iwaveamptab ftgentmp 0, 0, 32, -2, 0, 0, 1,1,1,1,0
- a1 partikkel kGrainRate, 0, -1, async, 0, -1,
+ a1, a1 partikkel kGrainRate, 0, -1, async, 0, -1,
   giSigmoRise, giSigmoFall, 0.5, 0.5, kduration, 0.5, -1,
   kwavfreq, 0.5, -1, -1, awavfm,
   -1, -1, giCosine, 1, 1, 1,
   -1, 0, giLiveFeed, giLiveFeed, giLiveFeed, giLiveFeed,
   iwaveamptab, asamplepos1, asamplepos2,
   asamplepos3, asamplepos4,
-  kwavekey1, kwavekey2, kwavekey3, kwavekey4, 100
+  kwavekey1, kwavekey2, kwavekey3, kwavekey4, 150
  ; audio feedback in granular processing
  aFeed dcblock a1
  chnset aFeed, "partikkelFeedback"
