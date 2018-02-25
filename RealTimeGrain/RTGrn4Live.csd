@@ -108,8 +108,8 @@ $RecordBound(4)
 endin
 </CsInstruments>
 <CsScore>
-i1 0 60000
-i2 0 60000
+i1 0 86400
+i2 0 86400
 
 </CsScore>
 </CsoundSynthesizer>
